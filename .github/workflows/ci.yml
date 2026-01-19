@@ -13,6 +13,8 @@ jobs:
 
             - name: Setup Nodejs
               uses: actions/setup-node@v4
+              with:
+                node-version: 18
 
             - name: Run lint
               run: npm run lint
